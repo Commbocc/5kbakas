@@ -1,0 +1,16 @@
+// fixed nav accomodation
+body { padding-top: 54px; }
+
+#navbar-main {
+
+	border-top: 3px solid #000;
+
+	.navbar-brand {
+		padding: 0;
+		img {
+			width: 60px;
+			height: auto;
+		}
+	}
+
+}

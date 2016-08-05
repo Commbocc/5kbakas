@@ -1,0 +1,117 @@
+<form action="" method="get" target="_blank">
+
+
+	<fieldset>
+		<legend>General Information about the Volunteer</legend>
+
+		<div class="form-group">
+			<label for="name">
+				Your Name: <small class="text-danger">*</small>
+			</label>
+			<input type="text" id="name" class="form-control" placeholder="First & Last" required>
+		</div>
+		<div class="form-group">
+			<label for="email">
+				Email: <small class="text-danger">*</small>
+			</label>
+			<input type="email" id="email" class="form-control" placeholder="" required>
+		</div>
+		<div class="form-group">
+			<label for="tel">
+				Telephone: <small class="text-danger">*</small>
+			</label>
+			<input type="tel" id="tel" class="form-control" placeholder="" required>
+		</div>
+
+		<div class="form-group">
+			<label for="address1">
+				Address: <small class="text-danger">*</small>
+			</label>
+			<input type="text" id="address1" class="form-control" required>
+			<input type="text" id="address2" class="form-control">
+		</div>
+		<div class="form-group">
+			<label for="city">
+				City: <small class="text-danger">*</small>
+			</label>
+			<input type="text" id="city" class="form-control" required>
+		</div>
+		<div class="form-group">
+			<label for="state">
+				State: <small class="text-danger">*</small>
+			</label>
+			<input type="text" id="state" class="form-control" value="FL" required>
+		</div>
+		<div class="form-group">
+			<label for="zip">
+				Zip: <small class="text-danger">*</small>
+			</label>
+			<input type="text" id="zip" class="form-control" required>
+		</div>
+
+		<div class="form-group">
+			<label>
+				Age:
+			</label>
+			<div class="radio">
+				<label>
+					<input type="radio" name="volunteerAge" id="volunteerAge1" value="option1" checked>
+					The volunteer is 18 years or older
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="volunteerAge" id="volunteerAge2" value="option2">
+					The volunteer is under the age of 18
+				</label>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="comments">
+				Additional comments or questions:
+			</label>
+			<textarea id="comments" class="form-control" placeholder=""></textarea>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>T-Shirt</legend>
+
+		<div class="form-group">
+			<label for="shirt-size">
+				Select shirt size <small class="text-danger">*</small>
+			</label>
+			<select class="form-control" id="shirt-size" required>
+				<option value="">Select a Size</option>
+				<option value="sm">small</option>
+				<option value="md">medium</option>
+				<option value="lg">large</option>
+				<option value="xl">x-large</option>
+			</select>
+			<ul class="help-block">
+				<li>shirts are in men's size</li>
+				<li>shirts will be distributed based on availability</li>
+				<li>we will do our best to accommodate your size preference</li>
+			</ul>
+		</div>
+
+	</fieldset>
+
+	<fieldset>
+		<legend>Waiver</legend>
+
+		<div class="form-group">
+			{% include volunteer-waiver.html %}
+			<label>
+				<input type="checkbox" required> I agree to the terms and conditions listed in the waiver above <small class="text-danger">*</small>
+			</label>
+		</div>
+
+	</fieldset>
+
+	<div class="form-group">
+		<input type="submit" value="Submit Form" class="btn btn-primary">
+	</div>
+
+</form>

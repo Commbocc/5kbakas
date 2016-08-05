@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+{% if page.jumbo_img %}
+{% capture bg_img_path %}/images/{{page.jumbo_img}}{% endcapture %}
+{% endif %}
+
+<header id="header-home" class="jumbo-header" {% if bg_img_path %}style="background-image: url({{ bg_img_path | prepend: site.baseurl }});"{% endif %}>
+	<section class="jumbotron">
+		<div class="container">
+
+			<div class="text-center">
+				<h1 class="text-white text-serif">
+					{{ site.title }}
+					<br>
+					<small>
+						{{ site.event_date | date: "%A, %B %-d, %Y" }}
+					</small>
+				</h1>
+				<p>
+					<a href="{{ '/registration-info/' | prepend: site.baseurl }}" class="btn btn-primary btn-lg text-upcase">
+						Registration Information
+					</a>
+				</p>
+			</div>
+
+		</div>
+	</section>
+</header>
+
+<main class="container">
+	{{ content }}
+</main>

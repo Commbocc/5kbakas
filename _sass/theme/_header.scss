@@ -1,0 +1,33 @@
+.jumbo-header {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	.jumbotron {
+
+		background: none;
+
+		h1 {
+			text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+			font-size: 2em;
+			@media (min-width: $screen-sm-min) {
+				font-size: 3.5em;
+			}
+
+			small {
+				color: #d5d5d5;
+			}
+
+		}
+	}
+}
+
+#header-home {
+	.jumbotron h1 small {
+		display: inline-block;
+		border-top: solid 1px $gray-light;
+		border-bottom: solid 1px $gray-light;
+		padding: 10px 0;
+		margin: 20px 0;
+	}
+}

@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{% if page.jumbo_img %}
+{% capture bg_img_path %}/images/{{page.jumbo_img}}{% endcapture %}
+{% endif %}
+
+{% if bg_img_path %}
+<header class="jumbo-header" style="background-image: url({{ bg_img_path | prepend: site.baseurl }});">
+	<section class="jumbotron">
+		<div class="container">
+			<div class="text-center">
+
+				<h1 class="text-white text-serif">
+					{{ page.title }}
+					{% if page.subtitle %}
+					<br>
+					<small>
+						{{ page.subtitle }}
+					</small>
+					{% endif %}
+				</h1>
+
+			</div>
+		</div>
+	</section>
+</header>
+{% endif %}
+
+<main class="container">
+	{{ content }}
+</main>

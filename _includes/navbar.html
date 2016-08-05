@@ -1,0 +1,39 @@
+<nav id="navbar-main" class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main-collapse" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}">
+				<img src="{{ '/images/logo.jpg' | prepend: site.baseurl }}" alt="{{ site.title }}" />
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="navbar-main-collapse">
+
+			<ul class="nav navbar-nav">
+				<!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
+				<li><a href="{{ '/registration-info/' | prepend: site.baseurl }}">Register &amp; Information</a></li>
+				<li><a href="{{ '/directions/' | prepend: site.baseurl }}">Directions</a></li>
+				<li><a href="{{ '/race-map-parking/' | prepend: site.baseurl }}">Race Map/Parking</a></li>
+				<li><a href="{{ '/sponsors/' | prepend: site.baseurl }}">Sponsors</a></li>
+				<li><a href="{{ '/volunteer/' | prepend: site.baseurl }}">Volunteer</a></li>
+				<li><a href="{{ '/contact/' | prepend: site.baseurl }}">Contact Us</a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="{{ site.facebook_link }}" target="_blank" title="Facebook">
+					<i class="fa fa-fw fa-facebook-official"></i>
+					<span class="visible-xs-inline-block">Facebook</span>
+				</a></li>
+			</ul>
+
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>

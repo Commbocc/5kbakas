@@ -1,0 +1,6 @@
+.text-white {
+	color: #fff !important;
+	@media print { color: #000 !important; }
+}
+.text-upcase { text-transform: uppercase; }
+.text-serif { font-family: $font-family-serif; }
