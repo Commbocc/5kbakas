@@ -2,8 +2,8 @@
 	{% for img in site.data.2015-event-imgs %}
 
 	<div class="col-xs-6 col-sm-4 col-md-3">
-		<a href="{{ '/images/2015-event/' | append: img.file }}" class="gallery-img-container" data-toggle="lightbox" data-gallery="home-gallery">
-				<img src="{{ '/images/2015-event/' | append: img.file }}" />
+		<a href="{{ '/images/2015-event/' | append: img.file | prepend: site.baseurl }}" class="gallery-img-container" data-toggle="lightbox" data-gallery="home-gallery">
+				<img src="{{ '/images/2015-event/' | append: img.file | prepend: site.baseurl }}" />
 		</a>
 	</div>
 
