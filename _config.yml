@@ -14,7 +14,7 @@ email: info@5kbakas.com
 
 description: Register today to join the Bakas 1st annual 5K Run / 1 mile Walk~Trot
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/5kbakas" # the subpath of your site, e.g. /blog
 url: "http://www.5kbakas.com/" # the base hostname & protocol for your site
 
 event_date: 2016-11-05 00:00:00 EST
