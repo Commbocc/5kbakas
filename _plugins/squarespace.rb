@@ -13,6 +13,9 @@ module Squarespace
 			# main css file
 			FileUtils.cp "#{site.in_dest_dir}/css/main.css", "#{squarespace_template_path}/styles/main.css"
 
+			# main js file
+			FileUtils.cp "#{site.in_dest_dir}/javascripts/theme.js", "#{squarespace_template_path}/scripts/theme.js"
+
 		end
 	end
 
