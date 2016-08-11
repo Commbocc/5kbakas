@@ -16,6 +16,11 @@
 
 			small {
 				color: #d5d5d5;
+
+				p {
+					font-size: inherit;
+				}
+
 			}
 
 		}
@@ -23,11 +28,25 @@
 }
 
 #header-home {
-	.jumbotron h1 small {
-		display: inline-block;
-		border-top: solid 1px $gray-light;
-		border-bottom: solid 1px $gray-light;
-		padding: 10px 0;
-		margin: 20px 0;
+
+	.site-description {
+
+		strong {
+			color: #d5d5d5;
+			display: inline-block;
+			font-weight: normal;
+			border-top: solid 1px $gray-light;
+			border-bottom: solid 1px $gray-light;
+			padding: 10px 0;
+			margin: 20px 0;
+		}
+
+		a {
+			@extend .btn;
+			@extend .btn-lg;
+			@extend .btn-primary;
+			@extend .text-upcase;
+		}
 	}
+
 }

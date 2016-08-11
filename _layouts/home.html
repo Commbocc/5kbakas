@@ -14,15 +14,19 @@ layout: default
 				<h1 class="text-white text-serif">
 					{{ site.title }}
 					<br>
-					<small>
-						{{ site.event_date | date: "%A, %B %-d, %Y" }}
+					<small class="site-description">
+						<p>
+							<strong>
+								{{ site.event_date | date: "%A, %B %-d, %Y" }}
+							</strong>
+						</p>
+						<p>
+							<a href="{{ '/registration-info/' | prepend: site.baseurl }}" class="btn btn-primary btn-lg text-upcase">
+								Registration Information
+							</a>
+						</p>
 					</small>
 				</h1>
-				<p>
-					<a href="{{ '/registration-info/' | prepend: site.baseurl }}" class="btn btn-primary btn-lg text-upcase">
-						Registration Information
-					</a>
-				</p>
 			</div>
 
 		</div>
